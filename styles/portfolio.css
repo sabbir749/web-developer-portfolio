@@ -3,6 +3,16 @@
 }
 
 /* Nav Style */
+
+.secondary-bg {
+    background: #FFF8F3;
+    background-image: url('../images/developer.png'), url('../images/hardy.png');
+    background-repeat: no-repeat;
+    background-position: left, right bottom;
+    height: 837px;
+
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -10,18 +20,15 @@ nav {
     margin: 0 200px;
 }
 
-.secondary-bg {
-    background: #FFF8F3;
-}
-
-
 .text-primary {
     color: #fd6e0a;
 }
 
 .nav-title {
-    font-weight: 800;
+    font-weight: 900;
     font-size: 45px;
+    font-family: "Open Sans";
+
 }
 
 nav ul li {
@@ -47,10 +54,22 @@ nav ul li a {
     background-color: #FD6E0A;
     font-weight: bold;
     color: white;
-    padding: 18px 35px;
+    padding: 17px 19px;
     border-radius: 5px;
     font-size: 20px;
     border: none;
+}
+
+.btn-contact {
+
+    font-weight: bold;
+    color: #FD6E0A;
+    padding: 19px 23px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: transparent;
+    border: 1px solid #FD6E0A;
+    margin-left: 30px;
 }
 
 .banner-greetings {
@@ -60,7 +79,8 @@ nav ul li a {
 
 .banner-title {
     font-weight: bold;
-    font-size: 45px;
+    font-size: 85px;
+    font-family: Open Sans;
 }
 
 .banner-profile-pic {
@@ -78,27 +98,58 @@ nav ul li a {
     max-width: 580px;
 }
 
-.header {
-    background-image: url(../images/developer.png), url(../images/header_bg.png);
-    background-repeat: no-repeat;
-    background-position: top left, bottom right;
+.banner-desc {
+    color: #757575;
+
 }
 
+/* about styles */
+
+
+
+
+.idskills {
+    background: #FFF8F3;
+    max-width: 1140px;
+    max-height: 550px;
+    padding: 130px;
+    border-radius: 15px;
+}
+
+.about {
+    background-color: white;
+    width: 827px;
+    height: 288px;
+    border: 1px solid black;
+    margin-right: 20px;
+    padding: 0 1px 7px 5px;
+    margin: auto;
+}
+
+
 .section-title {
-    font-size: 35px;
+    font-size: 33px;
     font-weight: bold;
     color: #181818;
+    margin: 10px 0 0 0;
 }
 
 .section-desc {
     font-size: 18px;
     color: #757575;
+    font-family: open sans;
 }
 
-/* about styles */
-.about {
-    border-radius: 10px;
+.item-desc {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: open sans;
 }
+
+/* p {
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.568);
+} */
 
 /* main styles */
 main {
@@ -108,9 +159,7 @@ main {
     text-align: center;
 }
 
-.item-desc {
-    font-weight: 600;
-}
+
 
 .about-items {
     display: flex;
@@ -128,19 +177,30 @@ main {
 }
 
 .skill {
-    padding: 0px 30px;
+    padding: 30px;
     margin-top: 30px;
-    box-shadow: 0px 6px 50px 0px rgba(126, 94, 94, 0.226);
+    box-shadow: 0px 5px 20px 0px rgba(167, 142, 142, 0.144);
     border-radius: 5px;
 }
 
-.skill-desc {
-    font-size: 14px;
+.skill-title {
+    color: #181818;
+    font-family: open sans;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-p {
-    line-height: 25px;
-    color: rgba(0, 0, 0, 0.568);
+.skill-desc {
+    font-size: 15px;
+    color: #757575;
+    font-family: open sans;
+    line-height: 23px;
+}
+
+.skillsp {
+    padding: 0 115px;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 /* resume section styles */
@@ -184,6 +244,7 @@ p {
 
 .cv {
     margin-top: 130px;
+    margin-bottom: 110px;
     font-weight: bold;
     font-size: 35;
     color: #181818;
@@ -191,15 +252,15 @@ p {
 
 /* footer */
 footer {
-    /* background: #000; */
-    padding: 130px 230px;
+    background: #FFF8F3;
+    padding: 100px 163px;
     display: flex;
     gap: 100px;
+    justify-content: space-between;
+
 }
 
-.footer-column {
-    width: 50%;
-}
+
 
 footer input[type="text"],
 footer input[type="email"] {
@@ -220,4 +281,25 @@ footer input[type="email"] {
     background-color: white;
     border: 1px solid rgba(0, 0, 0, 0.082);
     padding: 0 20px;
+}
+
+.social-icons a {
+    padding: 0 20px 0 0;
+
+}
+.social-icons img{
+    width: 21px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.footer-column2 {
+    text-align: left;
+    width: 400px;
+}
+
+.footer-column p {
+    font-size: 15px;
+    font-family: open sans;
+    color: #757575;
 }
